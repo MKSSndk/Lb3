@@ -65,3 +65,9 @@ class TicTacToe(QWidget):
             for col in range(3):
                 self.board[row][col].setText("")
         self.current_player = "X"
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    game = TicTacToe()
+    game.show()
+    sys.exit(app.exec())
